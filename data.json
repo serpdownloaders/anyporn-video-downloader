@@ -1,0 +1,208 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/anyporn-downloader",
+  "serply_link": "https://serp.ly/anyporn-downloader",
+  "app_name": "Anyporn Video Downloader",
+  "short_description": "Download & Save Anyporn Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Anyporn Downloader is a browser extension that gives you a straightforward path from browsing AnyPorn to saving video files locally. Instead of forcing you to land on one specific page type, this tool works from category pages, numeric detail pages, and other matched AnyPorn pages so you can start from wherever you already are. The extension inspects page metadata and player elements to detect media candidates, then lets you download them as MP4 files through a simple in-browser workflow.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/anyporn-downloader-fullscreen-01-772d2598a7.webp",
+    "https://apps.serp.co/media/optimized-products/anyporn-downloader-fullscreen-02-d9fbfa7714.webp",
+    "https://apps.serp.co/media/optimized-products/anyporn-downloader-fullscreen-03-f90eae6e29.webp",
+    "https://apps.serp.co/media/optimized-products/anyporn-downloader-fullscreen-04-947ee33e05.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "What pages does this extension target?",
+      "answer": "It matches AnyPorn pages including the root domain, www subdomain, and other subdomains. This includes category pages and numeric detail pages."
+    },
+    {
+      "question": "Can I start downloading from a category page instead of a video page?",
+      "answer": "The extension is designed to work from any matched AnyPorn page, but a video player must be present for media detection to work. Category pages may not have a player until you click through to a specific video."
+    },
+    {
+      "question": "Does every matched page guarantee a downloadable video?",
+      "answer": "No. The brand angle is that any matched page can be the entry point, not that every page is guaranteed to expose a usable stream."
+    },
+    {
+      "question": "Is this extension released and ready for public use?",
+      "answer": "Yes, this extension is released and available through GitHub Releases. Download the latest build from the releases page."
+    },
+    {
+      "question": "What is the most distinctive page pattern for this extension?",
+      "answer": "The supplied sample is a bare numeric detail URL such as /768448/. This pattern is common on AnyPorn and works well with the extension workflow."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Broad AnyPorn match coverage across root, www, and subdomains",
+    "Player button targets the known video wrapper for easy access",
+    "Compact selector set for title, video, and thumbnail discovery",
+    "Offscreen defaults point to an organized AnyPorn folder",
+    "Three free downloads to test the workflow before committing",
+    "No manual source hunting required",
+    "Works with category-led discovery and bare numeric detail-page workflows",
+    "Player button targets the known video wrapper for one-click access",
+    "Shared content stack includes download manager and player button scripts",
+    "Offscreen defaults point to an AnyPorn folder with correct referer and origin values",
+    "Three free downloads included for testing the workflow",
+    "No manual page inspection required to find video sources"
+  ],
+  "content": {
+    "why": [
+      "Anyporn is a video platform where content is organized into category pages and detail pages with numeric URLs. This structure means a user might start browsing from a broad category like HD videos, then click through to a specific detail page to watch. The problem is that the media file itself is often hidden behind the player rather than exposed as a simple link you can save directly.",
+      "Anyporn Downloader solves this by working with how people actually browse the site. You can start from a category page, land on a numeric detail page, or open any other matched page, and the extension will inspect the page for media candidates. It reads video sources from common metadata tags and page elements, then gives you a download button on the player wrapper so you can save the file without digging through source code or using third-party tools."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open AnyPorn and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Open your browser and navigate to any AnyPorn page that contains a video. This could be a category page like /categories/hd/ or a numeric detail page like /768448/.",
+      "Make sure the extension is installed and active. You should see the extension icon in your browser toolbar.",
+      "Start playing the video on the page. The extension needs the player to be active to detect available media sources.",
+      "Look for the download button that appears on or near the video player wrapper. This button is placed automatically by the extension.",
+      "Click the download button to open the extension popup or trigger the download workflow.",
+      "Review the detected media information including the video title and available quality options.",
+      "Select your preferred quality and click the download button to start saving.",
+      "Wait for the download to complete. The file will be saved to your default downloads folder inside an AnyPorn subfolder."
+    ],
+    "supported_formats": [
+      "Input: Video sources detected from page metadata tags, video elements, and Open Graph properties",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "AnyPorn users who want a simple browser workflow for saving available videos",
+      "Users who move from category pages into numeric detail pages and do not want manual source hunting",
+      "People who prefer browser extensions over standalone downloader applications",
+      "Users who want organized downloads with dedicated folder structure"
+    ],
+    "use_cases": [
+      "Starting on a category page like /categories/hd/ and moving into a supported video page",
+      "Opening a bare numeric AnyPorn detail URL such as /768448/ and downloading directly",
+      "Using the in-page player button on the known player wrapper",
+      "Detecting video candidates from page media tags and metadata selectors",
+      "Keeping downloads organized under an AnyPorn folder when the offscreen flow saves files"
+    ],
+    "troubleshooting": [
+      "The download button does not appear on the video page Make sure the video player is loaded and playing. The extension needs the player element to be present in the page before it can attach the download button.",
+      "The extension cannot detect any video sources Not every matched page guarantees a usable stream. Try a different video page, especially one with a numeric detail URL pattern.",
+      "Downloads fail or produce incomplete files Check your internet connection and make sure the video is fully loaded before starting the download. You can also try refreshing the page and attempting again.",
+      "The extension icon is grayed out The extension only activates on pages that match the AnyPorn domain pattern. Verify you are on a valid AnyPorn page.",
+      "Files are not saving to the AnyPorn folder The offscreen default folder is set to AnyPorn, but your browser settings may override this. Check your browser download preferences."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported AnyPorn page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "The extension works best on numeric detail pages where a video player is present",
+      "Category pages serve as discovery entry points but require clicking through to a video page for downloads"
+    ],
+    "about": [
+      "AnyPorn is a video platform that organizes content into category pages and numeric detail pages for easy browsing. Anyporn Downloader makes it possible to save available videos from these pages using a simple browser extension workflow."
+    ]
+  },
+  "serpx_link": "https://serpx.link/anyporn-downloader",
+  "github_topics": [
+    "anyporn-download",
+    "anyporn-downloader",
+    "anyporn-video-downloader",
+    "anyporn-video-downloader-online",
+    "anyporn-video-downloader-mac",
+    "anyporn-video-downloader-window",
+    "anyporn-video-downloader-free",
+    "anyporn-video-downloader-extension",
+    "anyporn-video-downloader-app",
+    "anyporn-video-downloader-chrome",
+    "anyporn-video-downloader-from-url",
+    "how-to-download-anyporn-videos",
+    "how-to-download-anyporn-videos-mac",
+    "how-to-download-anyporn-videos-windows",
+    "how-to-download-anyporn-videos-online",
+    "how-to-download-anyporn-videos-free",
+    "how-to-download-from-anyporn",
+    "how-to-download-videos-from-anyporn",
+    "download-anyporn-videos",
+    "anyporn-video-tutorial",
+    "save-anyporn-videos",
+    "anyporn-video-content-saver",
+    "how-to-download-anyporn-videos-for-free"
+  ],
+  "hashtags": [
+    "#AnypornDownload",
+    "#AnypornDownloader",
+    "#AnypornVideoDownloader",
+    "#AnypornVideoDownloaderOnline",
+    "#AnypornVideoDownloaderMac",
+    "#AnypornVideoDownloaderWindow",
+    "#AnypornVideoDownloaderFree",
+    "#AnypornVideoDownloaderExtension",
+    "#AnypornVideoDownloaderApp",
+    "#AnypornVideoDownloaderChrome",
+    "#AnypornVideoDownloaderFromURL",
+    "#HowToDownloadAnypornVideos",
+    "#HowToDownloadAnypornVideosMac",
+    "#HowToDownloadAnypornVideosWindows",
+    "#HowToDownloadAnypornVideosOnline",
+    "#HowToDownloadAnypornVideosFree",
+    "#HowToDownloadFromAnyporn",
+    "#HowToDownloadVideosFromAnyporn",
+    "#DownloadAnypornVideos",
+    "#AnypornVideoTutorial",
+    "#SaveAnypornVideos",
+    "#AnypornVideoContentSaver",
+    "#HowToDownloadAnypornVideosForFree"
+  ],
+  "youtube_tags": [
+    "Anyporn Download",
+    "Anyporn Downloader",
+    "Anyporn Video Downloader",
+    "Anyporn Video Downloader Online",
+    "Anyporn Video Downloader Mac",
+    "Anyporn Video Downloader Window",
+    "Anyporn Video Downloader Free",
+    "Anyporn Video Downloader Extension",
+    "Anyporn Video Downloader App",
+    "Anyporn Video Downloader Chrome",
+    "Anyporn Video Downloader From URL",
+    "How To Download Anyporn Videos",
+    "How To Download Anyporn Videos Mac",
+    "How To Download Anyporn Videos Windows",
+    "How To Download Anyporn Videos Online",
+    "How To Download Anyporn Videos Free",
+    "How To Download From Anyporn",
+    "How To Download Videos From Anyporn",
+    "Download Anyporn Videos",
+    "Anyporn Video Tutorial",
+    "Save Anyporn Videos",
+    "Anyporn Video Content Saver",
+    "How To Download Anyporn Videos For Free"
+  ]
+}
